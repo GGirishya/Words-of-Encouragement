@@ -23,6 +23,8 @@ function renderTTS(text) {
 
 function encourage() {
   // Get the name and words of encouragement.
+  let name = document.getElementById("name").value;
+  let encouragement = document.getElementById("encouragement").value;
 
   // combine those into some text
 
