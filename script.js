@@ -30,6 +30,6 @@ function encourage() {
   let message = `Hello ${name}, I have something I would like totell you. ${encouragement} Have a nice day🫂!` 
 
   // Render text to the user
- 
+   renderTTS(message);
   
 }
