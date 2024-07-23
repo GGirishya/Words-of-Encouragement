@@ -20,3 +20,12 @@ function renderTTS(text) {
   // Speak the utterance
   synthesis.speak(utterance);
 }
+
+function encourage() {
+  // Get the name and words of encouragement.
+
+  // combine those into some text
+
+  // Render text to the user
+  
+}
