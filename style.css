@@ -1,6 +1,8 @@
 body{
   height: 100vh;
-  background-image: linear-gradient(lightblue , purple);
+  background-color: rgba(127, 185, 166, 0.5)
+
+;
   }
 
 .row{
@@ -9,14 +11,27 @@ body{
 input{
   height: 40px;
   text-align: center;
+  
 }
 
 textarea{
   width: 80%;
   height: 120px;
+
 }
 
 textarea::placeholder{
   text-align: center;
   line-height:  60px;
+ 
+}
+
+.btn:hover{
+  border-radius: 25px;
+  color:black;
+}
+.logo:hover{
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.5));
+
+  
 }
