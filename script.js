@@ -25,11 +25,19 @@ function encourage() {
   // Get the name and words of encouragement.
   let name = document.getElementById("name").value;
   let encouragement = document.getElementById("encouragement").value;
+  let postScript = document.getElementById("post-script").value;
+
 
   // combine those into some text
-  let message = `Hello ${name}, I have something I would like to tell you . ${encouragement} . Have a nice day!` 
+  let message = `Hello ${name}, I have something I would like to tell you . ${encouragement} . ${postScript} . Have a nice day!` 
 
   // Render text to the user
    renderTTS(message);
   
+}
+
+function setVolume() {
+   var mediaClip = document.getElementById("mediaClip").value;
+   document.getElementById("mediaClip").value = mediaClip;
+   mediaClip.volume = document.getElementById("volume1").value;
 }

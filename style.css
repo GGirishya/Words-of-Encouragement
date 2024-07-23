@@ -1,7 +1,8 @@
 body{
   height: 100vh;
-  background-image: linear-gradient(#ffb5b5,#ffe7e7);
-}
+  background-image: linear-gradient(lightblue , purple);
+  }
+
 .row{
   margin: 4vh 0;
 }

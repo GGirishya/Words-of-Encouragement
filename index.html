@@ -30,8 +30,13 @@
     </div>
     <div class="row">
       <p class="col-sm">Add a post script🫂!</p>
-      <textarea  id="encouragement" placeholder="Post Script" class="col-sm" ></textarea>
+      <textarea  id="post-script" placeholder="Post Script" class="col-sm" ></textarea>
     </div>
+    <div class="text-center row">
+   
+      <input type="range" onchange="setVolume()" id='volume1' min=0 max=1      step=0.01 value='1'>
+      <p class="vol">Volume🔊</p>
+      </div>
     <div class="row">
       <div class="col"></div>
       <button onclick="encourage()" class="col-8 btn btn-primary"> Hear It!🥳</button>
