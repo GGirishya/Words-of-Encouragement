@@ -28,7 +28,7 @@ function encourage() {
   let postScript = document.getElementById("post-script").value;
 
   // Combine those into some text
-  let message = `Hello ${name}, I have something I would like to tell you. ${encouragement}. P.S. ${postScript}. Have a nice day!`;
+  let message = `Hello ${name}, I have something I would like to tell you, ${encouragement}. P.S. , ${postScript}, Have a nice day!`;
 
   // Render text to the user
   renderTTS(message);
