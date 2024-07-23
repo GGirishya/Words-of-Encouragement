@@ -32,6 +32,35 @@ textarea::placeholder{
 }
 .logo:hover{
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.5));
+}
 
-  
+
+
+@keyframes rotate-once {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-once {
+  animation: rotate-once 2s forwards; /* Adjust duration as needed */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9); /* Shrinks the button */
+  }
+  100% {
+    transform: scale(1); /* Grows the button back */
+  }
+}
+
+.animate-button {
+  animation: pulse 1s infinite; /* Adjust duration as needed */
 }

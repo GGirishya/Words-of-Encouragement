@@ -20,7 +20,31 @@ function renderTTS(text) {
 
   // Speak the utterance
   synthesis.speak(utterance);
-}
+
+
+    // Start the button animation
+    speakButton.classList.add("animate-button");
+
+    // Rotate the logo
+    logo.classList.add("rotate-once");
+
+    // remove the rotation class after the animation
+    logo.addEventListener("animationend", function() {
+      logo.classList.remove("rotate-once");
+    });
+
+  // Start the button animation by adding the 'animate-button' class
+  speak.classList.add("animate-button");
+
+  // Stop the button animation when speech ends by removing the 'animate-button' class
+  utterance.onend = function() {
+    speak.classList.remove("animate-button");
+    };
+  }
+
+
+
+  
 
 function encourage() {
   // Get the name and words of encouragement
@@ -34,6 +58,11 @@ function encourage() {
   // Render text to the user
   renderTTS(message);
 }
+
+
+
+
+
 
 function setVolume() {
   // Get the volume slider element by its ID
