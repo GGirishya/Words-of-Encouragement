@@ -1,40 +1,48 @@
-body{
+body {
   height: 100vh;
-  background-color: rgba(127, 185, 166, 0.5)
+  background-color: rgba(127, 185, 166, 0.5);
+}
 
-;
-  }
-
-.row{
+.row {
   margin: 4vh 0;
 }
-input{
+
+input {
   height: 40px;
   text-align: center;
-  
 }
 
-textarea{
+textarea {
   width: 80%;
   height: 120px;
-
 }
 
-textarea::placeholder{
+textarea::placeholder {
   text-align: center;
-  line-height:  60px;
- 
+  line-height: 60px;
 }
 
-.btn:hover{
+.btn:hover {
   border-radius: 25px;
-  color:black;
+  color: black;
 }
-.logo:hover{
+
+.logo:hover {
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.5));
 }
 
+.logo {
+  width: 100px;
+  height: 100px;
+  transition: transform 1s;
+}
 
+.shrink-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: transform 0.2s;
+}
 
 @keyframes rotate-once {
   from {
@@ -46,7 +54,7 @@ textarea::placeholder{
 }
 
 .rotate-once {
-  animation: rotate-once 2s forwards; /* Adjust duration as needed */
+  animation: rotate-once 1s forwards; /* Adjust duration as needed */
 }
 
 @keyframes pulse {
@@ -54,7 +62,7 @@ textarea::placeholder{
     transform: scale(1);
   }
   50% {
-    transform: scale(0.9); /* Shrinks the button */
+    transform: scale(0.8); /* Shrinks the button */
   }
   100% {
     transform: scale(1); /* Grows the button back */
@@ -62,5 +70,5 @@ textarea::placeholder{
 }
 
 .animate-button {
-  animation: pulse 1s infinite; /* Adjust duration as needed */
+  animation: pulse 0.2s; /* Adjust duration as needed */
 }
