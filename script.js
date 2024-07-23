@@ -27,7 +27,7 @@ function encourage() {
   let encouragement = document.getElementById("encouragement").value;
 
   // combine those into some text
-  let message = `Hello ${name}, I have something I would like totell you. ${encouragement} Have a nice day🫂!` 
+  let message = `Hello ${name}, I have something I would like to tell you. ${encouragement}. Have a nice day!` 
 
   // Render text to the user
    renderTTS(message);
