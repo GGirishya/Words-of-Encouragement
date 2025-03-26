@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 21st Birthday!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8; /* Light Blue */
+            color: #222;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-image: url('background-heart.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        h1 {
+            font-size: 3rem;
+            color: #1e3a8a; /* Deep Blue */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .buttons {
+            margin: 20px 0;
+        }
+        button {
+            background-color: #1e3a8a; /* Deep Blue */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        button:hover {
+            background-color: #d53f8c; /* Pink */
+        }
+        .content {
+            padding: 20px;
+            border-radius: 15px;
+            max-width: 600px;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .hidden {
+            display: none;
+        }
+
+        /* Unique section colors */
+        #intro { background-color: #ffffff; color: #1e3a8a; } /* White & Blue */
+        #prayer { background-color: #1e3a8a; color: #ffffff; } /* Blue & White */
+        #verses { background-color: #000000; color: #ffffff; } /* Black & White */
+        #french { background-color: #d53f8c; color: #ffffff; } /* Pink */
+        /*#love-letter { background-color: #4a5568; color: #ffffff; } /* Dark Gray */ 
+
+
+                /* Falling effect full-screen */
+        #falling-effect {
+          position: absolute;
+          width: 100%;
+          height: 100vh;
+          pointer-events: none;
+          z-index: 9999;
+        }
+
+        /* Falling elements (21, hearts, roses) */
+        .falling {
+          position: absolute;
+          top: -50px;
+          font-size: 2rem;
+          animation: fallAnimation 3s linear forwards; /* CHANGED: Faster animation */
+        }
+
+        /* Updated Falling Animation */
+        @keyframes fallAnimation {
+          0% { transform: translateY(0); opacity: 1; }
+          100% { transform: translateY(100vh); opacity: 0; } /* CHANGED: Now fades out */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Happy 21st Birthday, My Love! 🎉❤️</h1>
+        <p>A special message just for you! 💕</p>
+
+        <div class="buttons">
+            <button onclick="showSection('intro')">Happy 21st Birthday!</button>
+            <button onclick="showSection('prayer')">A Special Prayer</button>
+            <button onclick="showSection('verses')">12 Motivational Verses</button>
+            <button onclick="showSection('french')">Joyeux Anniversaire, Mon Amour!</button>
+            <!-- <button onclick="showSection('love-letter')">A Hidden Love Letter</button> -->
+        </div>
+
+        <div id="intro" class="content">
+            <h2>Happy 21st Birthday!</h2>
+            <p>Wow, my Duckieeee, you are officially 21, and I couldn’t be prouder of the amazing woman you are becoming! 🥹 From the moment you came into my life, you have been a light, a blessing, and a whole bundle of joy that I honestly don’t know how I ever lived without. 😭 I can’t tell you how grateful I am to have you—your kindness, your strength, your humor (which sometimes only you find funny 😭😂), and that heart of gold that makes everyone around you feel loved. Today, we celebrate YOU—your growth, your journey, and all the incredible things God has in store for you!💖</p>
+        </div>
+
+        <div id="prayer" class="content hidden">
+            <h2>A Special Prayer</h2>
+            <p>As you step into this new year of life, I pray that God’s favor follows you everywhere you go. May He bless you with wisdom, confidence, and strength to take on every opportunity and overcome every challenge. I pray that He guides your steps as you work towards your driver’s license, that He clears every obstacle in your path as you strive for your dream college, and that He overflows your life with love, joy, success, and unshakable faith.</p>
+            <p>May you always know how worthy and powerful you are. Jeremiah 29:11 says, “For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you hope and a future.” My love, never doubt that God is working things out for your good! Even when things feel tough, even when it doesn’t make sense—trust the process, because God is setting you up for greatness.</p>
+
+            <p>And speaking of greatness, can we talk about how you’re about to become the best driver in town? 😭😂 I already know you’re going to pass that test with flying colors, and I’ll be right there cheering you on (and maybe screaming a little if you decide to go full Fast & Furious mode on the road 😭🚗💨). And college? Oh, that’s yours for the taking! I have no doubt that you’ll achieve every single goal you set your mind to. You are capable, intelligent, and unstoppable, and I can’t wait to see you thrive in this new season of life.</p>
+      
+            <p>My pookie, you are not just beautiful on the outside but even more breathtaking on the inside. The way you care for people, the way you love so deeply, the way you make even the most ordinary days feel special—it’s all a reflection of the beautiful soul that you are. I want you to remember, every single day, that you are worthy of all the love, joy, and success in this world. As Proverbs 31:25 says, “She is clothed with strength and dignity, and she laughs without fear of the future.” My love, laugh boldly, dream fearlessly, and step into this new chapter knowing that God is with you, always. 🙏🏽</p>
+            <p>May God Protect our relationship and make it stronger than ever. We believe in You Lord, just do your wonders</p>
+        </div>
+
+        <div id="verses" class="content hidden">
+            <h2>12 Motivational Verses</h2>
+            <p>
+                <strong>📌March 2025</strong> – Isaiah 40:31 – (You are stepping into this new year stronger than ever!) 🕊️<br>
+                <strong>📌April 2025</strong> – Psalm 46:5 – (No matter what comes your way, you will always stand tall!) 🌊<br>
+                <strong>📌May 2025</strong> – Romans 8:28 – (Everything is aligning for your good, my love!) 🌟<br>
+                <strong>📌June 2025</strong> – Philippians 4:13 – (Nothing is impossible for you—go chase those dreams!) 💪<br>
+                <strong>📌July 2025</strong> – Psalm 37:4 – (Your prayers and dreams are in God’s hands!) 💖<br>
+                <strong>📌August 2025</strong> – Deuteronomy 31:6 – (You are NEVER alone!) 🛡️<br>
+                <strong>📌September 2025</strong> – Matthew 6:33 – (God will provide everything you need!) ✨<br>
+                <strong>📌October 2025</strong> – Proverbs 3:5-6 – (Trust Him, even when you don’t have all the answers!) 🏞️<br>
+                <strong>📌November 2025</strong> – 2 Timothy 1:7 – (You are strong, fearless, and unstoppable!) 🔥<br>
+                <strong>📌December 2025</strong> – Psalm 23:1 – (You are provided for, always!) 🐑<br>
+                <strong>📌January 2026</strong> – Colossians 3:23 – (Keep putting your heart into everything you do!) 🚀<br>
+                <strong>📌February 2026</strong> – Numbers 6:24-26 – (May His favor shine upon you always!) 🌿
+            </p>
+        </div>
+
+        <div id="french" class="content hidden">
+            <h2>Joyeux Anniversaire, Mon Amour!</h2>
+            <p>Mon amour, aujourd’hui est un jour spécial parce que c’est <strong>ton jour</strong>! 🎂 Que Dieu t’accorde tout ce que ton cœur désire. Continue d’être la personne incroyable que tu es. Je t’aime de tout mon cœur! 💕✨🎉 Bizous, bizous! 😘</p>
+        </div>
+
+        <div id="love-letter" class="content hidden">
+          <div id="falling-effect">
+          </div>
+          <div id="love-letter" class="hidden">
+              <h2>A Hidden Love Letter</h2>
+              <p>To my one and only,</p>
+              <p>Every single day, I find new reasons to love you even more. Your kindness, your intelligence, and your beautiful soul make my world complete. I cherish every moment we share, and I can't wait to see what the future holds for us.</p>
+              <p>With all my love, always. 💌</p>
+          </div>
+      </div>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.content');
+            sections.forEach(section => {
+                section.classList.add('hidden');
+            });
+
+            document.getElementById(sectionId).classList.remove('hidden');
+        }
+
+
+      
+
+      
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.content');
+            sections.forEach(section => {
+                section.classList.add('hidden');
+            });
+
+            if (sectionId !== "love-letter") {
+                document.getElementById(sectionId).classList.remove("hidden");
+                return;
+            }
+
+            showLoveLetter(); // Triggers falling effect but keeps love letter visible
+        }
+
+        function showLoveLetter() {
+            const fallingEffect = document.getElementById("falling-effect");
+
+            // Emojis to fall
+            const heartsAndRoses = ["❤️", "💖", "💘", "💝", "💗", "💞", "🌹"];
+
+            // Make exactly 21 "21" appear
+            for (let i = 0; i < 21; i++) {
+                createFallingElement("21");
+            }
+
+            // Create extra falling hearts and roses
+            for (let i = 0; i < 30; i++) {
+                let randomEmoji = heartsAndRoses[Math.floor(Math.random() * heartsAndRoses.length)];
+                createFallingElement(randomEmoji);
+            }
+
+            // CHANGED: Remove falling elements after 3 seconds instead of 10
+            setTimeout(() => {
+                fallingEffect.innerHTML = ""; // Clears all falling elements
+            }, 1000);
+        }
+
+        function createFallingElement(content) {
+            let span = document.createElement("span");
+            span.textContent = content;
+            span.classList.add("falling");
+            span.style.left = Math.random() * 100 + "vw";
+            span.style.animationDuration = Math.random() * 1.5 + 1.5 + "s"; // CHANGED: Random duration between 1.5s - 3s
+            document.getElementById("falling-effect").appendChild(span);
+        }
+    </script>
+
+
+</body>
+</html>
